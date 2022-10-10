@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap");
+
+*::after *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --filled-seat-clr: rgb(255, 0, 0);
+  --selected: rgb(0, 255, 0);
+  --bg-clr: rgb(145, 144, 144);
+  --white: rgb(255, 255, 255);
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-clr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.movie-selection {
+  font-size: 36px;
+}
+.movie-container {
+  margin: 0.5rem 0.5rem;
+  font-size: larger;
+  color: var(--white);
+}
+
+#movies {
+  background-color: var(--white);
+  padding: 10px 50px 10px 50px;
+  font-size: 17px;
+  font-weight: 700;
+  border-radius: 6px;
+  margin-left: 2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.seat {
+  display: flex;
+  background-color: var(--white);
+  height: 1rem;
+  width: 1rem;
+  margin: 0.7rem;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+.seat.selected {
+  background-color: var(--selected);
+}
+
+.seat.occupied {
+  background-color: var(--filled-seat-clr);
+}
+
+.seat:hover {
+  cursor: pointer;
+}
+
+
+
+.seat:nth-of-type(3){
+  margin-left : 2.3rem;
+}
+
+.seat:nth-last-of-type(2){
+  margin-left : 2.3rem;
+}
+
+.show-case {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: var(--white);
+  width: 23rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.show-case li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px;
+  padding: 5px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen-container {
+  width: 23.2rem;
+  perspective: 1700px;
+  margin: 1rem;
+}
+
+.screen{
+  background-color: var(--white);
+  width: 23rem;
+  height: 10rem;
+  margin-bottom: 1.5rem;
+  justify-items: center;
+  transform: rotateX(-45deg);
+  box-shadow: 1px -10px 24px 5px rgba(0, 0, 256, 0.5);
+}
+
+
