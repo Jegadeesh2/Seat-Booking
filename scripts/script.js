@@ -1,15 +1,13 @@
 'use strict';
 
-// Global variables
-let moviePrice = moviesEl.value;
-let seatCount=0;
-
-//
 const moviesEl=document.querySelector('#movies');
 const countEl=document.querySelector('#count');
 const totalEl=document.querySelector('#total');
 const screenContainerEl=document.querySelector('.screen-container');
 
+// Global variables
+let moviePrice = moviesEl.value;
+let seatCount=0;
 
 moviesEl.addEventListener('change', function() {
   moviePrice = moviesEl.value;
